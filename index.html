@@ -4,359 +4,326 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Portfolio of Nayan Panchal - Graphic Designer specializing in Brand Identity, Posters, and UI Graphics.">
-    <meta name="keywords" content="Graphic Designer, Portfolio, Branding, Logo Design, UI Design, Creative">
-    <meta name="author" content="Nayan Panchal">
     <title>Nayan Panchal | Graphic Designer</title>
+    <meta name="description"
+        content="Portfolio of Nayan Panchal, a premium graphic designer specializing in brand identity and digital design.">
 
-    <!-- Google Fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
 
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="#hero" class="logo"><img
-                    src="https://github.com/NAMANG013/photo.nayan/blob/main/MY%20LOGO.png?raw=true" alt=""><span
-                    class="dot"></span></a>
-            <div class="nav-links">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#portfolio" class="nav-link">Work</a>
-                <a href="#contact" class="nav-link btn-nav">Hire Me</a>
-            </div>
-            <div class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
+            <a href="#" class="logo">NP.</a>
+            <ul class="nav-links links">
+                <li><a href="#about" class="nav-link">About</a></li>
+
+                <li><a href="#services" class="nav-link">Services</a></li>
+
+
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i data-lucide="menu"></i>
+            </button>
         </div>
     </nav>
 
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu">
-        <a href="#about" class="mobile-link">About</a>
-        <a href="#services" class="mobile-link">Services</a>
-        <a href="#portfolio" class="mobile-link">Work</a>
-        <a href="#contact" class="mobile-link">Contact</a>
-    </div>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-        <div class="container hero-content">
-            <div class="hero-text-wrapper">
-                <h2 class="greeting fade-in">Hi, I'm</h2>
-                <h1 class="name fade-in delay-1">Nayan Panchal</h1>
-                <h3 class="role fade-in delay-2">Graphics & ui/ux Designer</h3>
-                <p class="sub-text fade-in delay-3">User-friendly interfaces.• Clean visuals • Social Media Creatives</p>
-                <div class="hero-buttons fade-in delay-3">
-                    <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <h1 class="hero-title reveal-text">
+                    <span>I'm Nayan Panchal</span>
+                    <span style="font-size: 5rem;margin-top: 1rem;">Graphic Designer!</span>
+                </h1>
+                <p class="hero-subtitle reveal-text-delay">Strategic design for forward-thinking companies. I turn
+                    complex problems into simple, beautiful solutions.</p>
+                <div class="hero-cta reveal-text-delay-2">
+                    <a href="#work" class="btn btn-primary">View Work</a>
+                    <a href="#contact" class="btn btn-outline">Let's Talk</a>
                 </div>
             </div>
-            <div class="hero-image-wrapper fade-in delay-2">
-                <div class="hero-image-mask">
-                    <img src="https://github.com/NAMANG013/photo.nayan/blob/main/nayan1.jpeg?raw=true" alt="Nayan Panchal" class="hero-img">
-                </div>
-                <div class="floating-shape shape-1"></div>
-                <div class="floating-shape shape-2"></div>
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
             </div>
-        </div>
-        <a href="#about" class="scroll-down">
-            <i class="fa-solid fa-arrow-down"></i>
-        </a>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="section about-section">
-        <div class="container">
-            <div class="about-grid">
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container about-container">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop"
+                        alt="Nayan Panchal">
+                </div>
                 <div class="about-text">
                     <h2 class="section-title">About Me</h2>
-                    <p class="bio">
-             I’m Nayan, a passionate Graphics Designer and UI/UX Designer dedicated to creating visually impactful designs and intuitive digital experiences. I blend creativity with user-focused thinking to deliver designs that are functional, modern, and meaningful.
-Briefly describe your unique approach to design. For a UI/UX designer, this might emphasize user-centered design, problem-solving through research, and balancing aesthetics with functionality. A graphic designer might focus on visual storytelling or a specific aesthetic.  
-                    </p>
+                    <p class="lead">I'm Nayan Panchal, a multidisciplinary designer with a passion for minimalism.</p>
+                    <p>With over 5 years of experience, I've helped startups and established brands alike find their
+                        visual voice. My work is driven by a desire to create clarity out of chaos.</p>
+
+                    <div class="experience-box">
+                        <h4>Experience</h4>
+                        <ul class="experience-list">
+                            <li><strong>Senior Designer</strong> at Studio Alpha (2021-Present)</li>
+                            <li><strong>Freelance Designer</strong> (2018-2021)</li>
+                            <li><strong>Junior Creative</strong> at Design Co. (2017-2018)</li>
+                        </ul>
+                    </div>
 
                     <div class="skills-list">
-                        <span class="skill-pill">Photoshop</span>
-                        <span class="skill-pill">Illustrator</span>
-                        <span class="skill-pill">InDesign</span>
-                        <span class="skill-pill">Lightroom</span>
-                        <span class="skill-pill">CorelDRAW</span>
-                        <span class="skill-pill">Figma</span>
-                        <span class="skill-pill">Canva</span>
+                        <span class="skill-tag">Brand Strategy</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">Motion Graphics</span>
+                        <span class="skill-tag">Typography</span>
+                        <span class="skill-tag">Art Direction</span>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="stats-row">
-                        <div class="stat">
-                            <span class="stat-num">50+</span>
-                            <span class="stat-label">Projects</span>
+        <!-- Selected Work Section -->
+        <section id="work" class="work-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Selected Work</h2>
+                    <p class="section-desc">A curated collection of my best projects.</p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img alt="post 001.jpg"
+                                src="https://github.com/NAMANG013/photo.nayan/blob/main/post%20001.jpg?raw=true"
+                                data-hpc="true" class="Box-sc-62in7e-0 eLrlvS">
                         </div>
-                        <div class="stat">
-                            <span class="stat-num">3+</span>
-                            <span class="stat-label">Years Exp.</span>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img alt="post 002.jpg"
+                                src="https://github.com/NAMANG013/photo.nayan/blob/main/post%20002.jpg?raw=true"
+                                data-hpc="true" class="Box-sc-62in7e-0 eLrlvS">
                         </div>
-                        <div class="stat">
-                            <span class="stat-num">10+</span>
-                            <span class="stat-label">Brands</span>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img alt="post 0021.jpg"
+                                src="https://github.com/NAMANG013/photo.nayan/blob/main/post%200021.jpg?raw=true"
+                                data-hpc="true" class="Box-sc-62in7e-0 eLrlvS">
                         </div>
-                    </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img alt="post 003.jpg"
+                                src="https://github.com/NAMANG013/photo.nayan/blob/main/post%20003.jpg?raw=true"
+                                data-hpc="true" class="Box-sc-62in7e-0 eLrlvS">
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img alt="post 004.jpg"
+                                src="https://github.com/NAMANG013/photo.nayan/blob/main/post%20004.jpg?raw=true"
+                                data-hpc="true" class="Box-sc-62in7e-0 eLrlvS">
+                        </div>
+                    </article>
+
+                    <!-- Project 6 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img alt="post 005.jpg"
+                                src="https://github.com/NAMANG013/photo.nayan/blob/main/post%20005.jpg?raw=true"
+                                data-hpc="true" class="Box-sc-62in7e-0 eLrlvS">
+                        </div>
+                    </article>
                 </div>
-                <div class="about-visual">
-                    <div class="visual-box">
-                         <img src=" https://github.com/NAMANG013/photo.nayan/blob/main/pic%2011.png?raw=true" alt="Nayan Panchal" class="hero-img">
-                      
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Services</h2>
+                    <p class="section-desc">Design solutions tailored to your needs.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i data-lucide="palette" class="service-icon"></i>
+                        <h3>Brand Identity</h3>
+                        <p>Logo design, color palettes, typography, and brand guidelines to make your business stand
+                            out.</p>
+                        <span class="price">Starts at $1,500</span>
+                    </div>
+                    <div class="service-card">
+                        <i data-lucide="monitor" class="service-icon"></i>
+                        <h3>Web Design</h3>
+                        <p>Custom websites that are visually stunning, responsive, and optimized for conversions.</p>
+                        <span class="price">Starts at $2,000</span>
+                    </div>
+                    <div class="service-card">
+                        <i data-lucide="package" class="service-icon"></i>
+                        <h3>Packaging</h3>
+                        <p>Eye-catching packaging design that tells your product's story on the shelf.</p>
+                        <span class="price">Starts at $1,000</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Services Section -->
-    <section id="services" class="section services-section">
-        <div class="container">
-            <h2 class="section-title center">My Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-swatchbook"></i></div>
-                    <h3>Branding & Identity</h3>
-                    <p>Logo design, color palettes, and brand guidelines that tell your story.</p>
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Certifications</h2>
+                    <p class="section-desc">Continuous learning and professional development.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-hashtag"></i></div>
-                    <h3>Social Media</h3>
-                    <p>Engaging creatives for Instagram, LinkedIn, and Twitter to boost presence.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
-                    <h3>UI Graphics</h3>
-                    <p>Clean and modern interface elements for websites and mobile apps.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-print"></i></div>
-                    <h3>Print Design</h3>
-                    <p>Business cards, flyers, posters, and packaging design.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="section portfolio-section">
-        <div class="container">
-            <h2 class="section-title center">Selected Work</h2>
-
-            <div class="portfolio-filter">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="branding">Branding</button>
-                <button class="filter-btn" data-filter="social">Social Media</button>
-                <button class="filter-btn" data-filter="posters">Posters</button>
-            </div>
-
-            <div class="portfolio-grid">
-                <!-- Project 1 -->
-                <div class="portfolio-item" data-category="branding" data-id="1">
-                    <div class="portfolio-thumb color-1"></div>
-                    <div class="portfolio-overlay">
-                        <h3>Minimalist Coffee Brand</h3>
-                        <span>Branding</span>
-                        <button class="view-btn">View Project</button>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="portfolio-item" data-category="social" data-id="2">
-                    <div class="portfolio-thumb color-2"></div>
-                    <div class="portfolio-overlay">
-                        <h3>Fashion Sale Campaign</h3>
-                        <span>Social Media</span>
-                        <button class="view-btn">View Project</button>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="portfolio-item" data-category="posters" data-id="3">
-                    <div class="portfolio-thumb color-3"></div>
-                    <div class="portfolio-overlay">
-                        <h3>Music Festival Poster</h3>
-                        <span>Poster Design</span>
-                        <button class="view-btn">View Project</button>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="portfolio-item" data-category="branding" data-id="4">
-                    <div class="portfolio-thumb color-4"></div>
-                    <div class="portfolio-overlay">
-                        <h3>Tech Startup Logo</h3>
-                        <span>Branding</span>
-                        <button class="view-btn">View Project</button>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="portfolio-item" data-category="social" data-id="5">
-                    <div class="portfolio-thumb color-5"></div>
-                    <div class="portfolio-overlay">
-                        <h3>Fitness App Promo</h3>
-                        <span>Social Media</span>
-                        <button class="view-btn">View Project</button>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="portfolio-item" data-category="posters" data-id="6">
-                    <div class="portfolio-thumb color-6"></div>
-                    <div class="portfolio-overlay">
-                        <h3>Art Exhibition Flyer</h3>
-                        <span>Poster Design</span>
-                        <button class="view-btn">View Project</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="section certifications-section">
-        <div class="container">
-            <h2 class="section-title center">Certifications</h2>
-            <div class="cert-grid">
-                <!-- Cert 1 -->
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fa-brands fa-adobe"></i></div>
-                    <div class="cert-content">
-                        <h3>Adobe Photoshop Mastery</h3>
-                        <p class="cert-org">Adobe</p>
-                        <span class="cert-year">2024</span>
-                    </div>
-                </div>
-                <!-- Cert 2 -->
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
-                    <div class="cert-content">
-                        <h3>Graphic Design Essentials</h3>
-                        <p class="cert-org">Coursera</p>
-                        <span class="cert-year">2023</span>
-                    </div>
-                </div>
-                <!-- Cert 3 -->
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fa-brands fa-google"></i></div>
-                    <div class="cert-content">
-                        <h3>Branding Fundamentals</h3>
-                        <p class="cert-org">Udemy</p>
-                        <span class="cert-year">2023</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="section testimonials-section">
-        <div class="container">
-            <h2 class="section-title center">Client Love</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <p>"Nayan transformed our brand identity completely. The logo is exactly what we envisioned—clean,
-                        modern, and timeless."</p>
-                    <div class="client-info">
-                        <div class="client-avatar av-1"></div>
-                        <div>
-                            <h4>Naman Gajjar</h4>
-                            <span>CEO, Vastrasangar</span>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h3>Google UX Design Professional Certificate</h3>
+                            <p class="cert-org">Google</p>
+                            <span class="cert-year">2023</span>
+                            <a href="#" class="cert-link">View Certificate <i data-lucide="external-link"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="testimonial-card">
-                    <p>"Incredible attention to detail. The social media creatives helped us increase our engagement by
-                        40% in just one month."</p>
-                    <div class="client-info">
-                        <div class="client-avatar av-2"></div>
-                        <div>
-                            <h4>Mike Ross</h4>
-                            <span>Marketing Director</span>
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h3>Adobe Certified Professional</h3>
+                            <p class="cert-org">Adobe</p>
+                            <span class="cert-year">2022</span>
+                            <a href="#" class="cert-link">View Certificate <i data-lucide="external-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h3>Human-Computer Interaction</h3>
+                            <p class="cert-org">Interaction Design Foundation</p>
+                            <span class="cert-year">2021</span>
+                            <a href="#" class="cert-link">View Certificate <i data-lucide="external-link"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- Future Section -->
+        <section id="future" class="future-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">What's Next</h2>
+                    <p class="section-desc">My roadmap for growth and exploration.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="year">Q1 2025</span>
+                        <h3>3D Motion Design</h3>
+                        <p>Mastering Blender and Spline to add depth to my web projects.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">Q2 2025</span>
+                        <h3>Design System Workshop</h3>
+                        <p>Launching a course on building scalable design systems.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">Q4 2025</span>
+                        <h3>Agency Launch</h3>
+                        <p>Expanding into a full-service creative studio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
-        <div class="container">
-            <div class="contact-box">
-                <div class="contact-text">
-                    <h2>Let's Create Something Amazing</h2>
-                    <p>Ready to elevate your brand? Drop me a line and let's discuss your project.</p>
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <h2 class="section-title">Let's Create Together</h2>
+                    <p>Have a project in mind? I'd love to hear from you.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i data-lucide="mail"></i>
+                            <a href="mailto:hello@nayanpanchal.com">hello@nayanpanchal.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone"></i>
+                            <a href="tel:+919876543210">+91 98765 43210</a>
+                        </div>
+                    </div>
+
                     <div class="social-links">
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-behance"></i></a>
-                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Behance</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Dribbble</a>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label>Name</label>
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Email</label>
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Message</label>
-                        <textarea rows="4" placeholder="Tell me about your project" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Send Message</button>
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Nayan Panchal. Designed with <i class="fa-solid fa-heart"></i></p>
+            <p class="footer-text">&copy; 2025 Nayan Panchal. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Project Modal -->
-    <div class="modal-overlay" id="projectModal">
-        <div class="modal-content">
-            <button class="close-modal">&times;</button>
-            <div class="modal-body">
-                <div class="modal-image"></div>
-                <div class="modal-details">
-                    <h2 class="modal-title">Project Title</h2>
-                    <p class="modal-desc">Project description goes here.</p>
-                    <div class="modal-meta">
-                        <div><strong>Tools:</strong> <span class="modal-tools">Photoshop, Illustrator</span></div>
-                        <div><strong>Client:</strong> <span class="modal-client">Client Name</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 
 </html>
